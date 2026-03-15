@@ -7,21 +7,21 @@ A personal portfolio website hosted on GitHub Pages at [dacite.dev](https://daci
 ### BlackJack Simulator
 A blackjack simulator that teaches basic strategy.
 
-- **Live:** [dacite.dev/BlackJackGame](https://dacite.dev/BlackJackGame/index.html)
+- **Live:** [dacite.dev/blackjackgame](https://dacite.dev/blackjackgame/index.html)
 - **Source:** [github.com/DaciteRocks/BlackJackSim](https://github.com/DaciteRocks/BlackJackSim)
 - Hosted as a static page deployed through this repo
 
 ### Rapid Recall
 Get your friends to guess the word before time runs out! A multiplayer game of quick thinking and communication.
 
-- **Live:** [dacite.dev/RapidRecall](https://dacite.dev/RapidRecall/index.html)
+- **Live:** [dacite.dev/rapidrecall](https://dacite.dev/rapidrecall/index.html)
 - **Source:** [github.com/DaciteRocks/RapidRecall](https://github.com/DaciteRocks/RapidRecall)
 - Hosted as a static page deployed through this repo
 
 ### Ring Generator
 A parametric 3D ring generator that lets you customize and design rings.
 
-- **Live:** [dacite.dev/RingGenerator](https://dacite.dev/RingGenerator/index.html)
+- **Live:** [dacite.dev/ringgenerator](https://dacite.dev/ringgenerator/index.html)
 - **Source:** [github.com/DaciteRocks/ParametricRingGenerator](https://github.com/DaciteRocks/ParametricRingGenerator)
 - Hosted as a static page deployed through this repo
 
