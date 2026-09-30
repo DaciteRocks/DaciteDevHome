@@ -79,7 +79,7 @@ footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--border
 <h1>Talus</h1>
 <p class="sub">A desktop pet for Windows: a spider, a manta and a trilobite that live along the bottom of your screen, on top of whatever you are doing, and never get in the way of your mouse.</p>
 
-<video class="clip" autoplay loop muted playsinline preload="auto"
+<video class="clip" autoplay loop muted playsinline controls preload="auto"
        width="960" height="300" poster="talus-poster.png"
        aria-label="The manta picks up the spider, carries it, and lowers it back down on a thread">
   <source src="talus.webm" type="video/webm">
@@ -101,17 +101,17 @@ footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--border
 <h2>Before you run it</h2>
 <p>Talus is free and not code-signed, so Windows is cautious about it the first time.</p>
 <p><strong>SmartScreen</strong> (Windows 10 and 11). If you see <em>&ldquo;Windows protected your PC&rdquo;</em>,
-click <kbd>More info</kbd>, then <kbd>Run anyway</kbd>. You only have to do this once.</p>
+click <kbd>More info</kbd>, then <kbd>Run anyway</kbd>. Expect this again for each new version you download.</p>
 <div class="note">
 <p><strong>Windows 11 only: Smart App Control.</strong> If a message names &ldquo;Smart App Control&rdquo;,
-it blocks unsigned apps with no &ldquo;Run anyway&rdquo; button. The installer will only run with it turned off,
-under <em>Windows Security &gt; App &amp; browser control &gt; Smart App Control settings</em>.
-On an up-to-date Windows 11 (24H2 or 25H2 with the April 2026 update or later) you can switch it back on
-from the same page after installing. On older builds, turning it back on needed a reset of Windows,
-so if that is you and you would rather keep it on, skip Talus for now.
+it blocks unsigned apps every time they start, with no &ldquo;Run anyway&rdquo; button and no exception for one app.
+Talus can only be installed <em>and run</em> while it is turned off, under
+<em>Windows Security &gt; App &amp; browser control &gt; Smart App Control settings</em>.
+An up-to-date Windows 11 lets you switch it back on later, but Talus will then be blocked again.
+If you would rather keep Smart App Control on, skip Talus for now.
 Windows 10 has no Smart App Control.</p>
 </div>
-<p>The SHA-256 of each installer is published next to the download button, if you want to check your copy.</p>
+<p>Once Talus is released, the SHA-256 of the installer will be listed next to the download button, if you want to check your copy.</p>
 
 <h2>Requirements</h2>
 <ul>
@@ -132,7 +132,7 @@ Now and then two of them meet. They pause while a full-screen app or game is in 
 <em>Settings&hellip;</em> or by launching Talus while it is already running. Choose the monitor,
 switch each creature on or off, set how often they meet, let the manta follow your cursor,
 and start Talus with Windows.</li>
-<li><strong>Uninstall.</strong> Quit from the tray icon, then <em>Settings &gt; Apps &gt; Installed apps &gt; Talus &gt;
+<li><strong>Uninstall.</strong> Quit from the tray icon, then <em>Settings &gt; Apps &gt; Installed apps</em> (<em>Apps &amp; features</em> on Windows 10) <em>&gt; Talus &gt;
 Uninstall</em>. Tick &ldquo;Delete the application data&rdquo; to remove your settings too.</li>
 </ul>
 
@@ -149,12 +149,12 @@ Talus is made by <a href="/">Dacite</a>. Free to use; no accounts, no ads.
 </footer>
 </div>
 <script>
-// Respect reduced motion: hold the clip on its first frame and hand over the controls.
+// Respect reduced motion: no autoplay, hold the poster, fetch only metadata.
 if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   var clip = document.querySelector('video.clip');
   clip.removeAttribute('autoplay');
+  clip.preload = 'metadata';
   clip.pause();
-  clip.controls = true;
 }
 </script>
 </body>
