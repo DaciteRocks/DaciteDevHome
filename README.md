@@ -18,6 +18,7 @@ own deploy script.
 | `/refrigerasat/` | RefrigeraSat (HVAC tool) | `DaciteRocks/ConnerRefrigerantSaturationTempTool` | `npm run build:web` |
 | `/blackjackgame/` | Blackjack Simulator | `DaciteRocks/BlackJackSim` (Godot) | Godot Web export preset |
 | `/rapidrecall/` | Rapid Recall (party game) | `DaciteRocks/RapidRecall` (Godot) | Godot Web export preset |
+| `/talus/` | Talus (desktop pet overlay) | `DaciteRocks/DynamicSpiderSidebar` | `npm run deploy:site` |
 | `/cairntodo/`, `/strata/` | App store support/privacy pages only (no web build) | `DaciteRocks/ToDoApp` | `npm run deploy-web` |
 
 [Pisscord](https://pisscord.dacite.dev) (a Discord clone) is deployed separately on Vercel.
